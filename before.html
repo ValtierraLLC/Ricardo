@@ -1,9 +1,30 @@
 <html>
 <body>
-              <div class="tab">
-            <a href="index.html" class="sidebar">Home</a>
-            <a href="before.html" class="sidebar">Before & After Pictures</a>
-          </div>
+<h1 style="text-align:center"> Roofing, Drywall, Flooring, etc!<h1>
+<h2 style="text-align:center">~call, txt, email or fill out the form for a quote today~</h2>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'index.html')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'before.html')">Before & After Pictures</button>
+</div>
+<script>
+            function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+            </script> 
 <img class="wall" src="wall.jpg" style="width:100%">
 <img class="floor" src="floor.jpg" style="width:100%">
 </body>
