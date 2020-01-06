@@ -1,31 +1,36 @@
 <html>
-<body>
-<h1 style="text-align:center"> Roofing, Drywall, Flooring, etc!<h1>
-<h2 style="text-align:center">~call, txt, email or fill out the form for a quote today~</h2>
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'index.html')">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'before.html')">Before & After Pictures</button>
-</div>
-<script>
-            function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valtierra</title>
+<style> 
+.wrapper{
+display: grid;
+grid-template-columns: 50% 50%;
 }
-            </script> 
-<img class="wall" src="wall.jpg" style="width:100%">
-<img class="floor" src="floor.jpg" style="width:100%">
-</body>
-</html>
+.wrapper > div{
+background: #dddddd;
+padding: 0em;
+}
+.wrapper >div:nth-child(odd){
+ background: #eeeeee;
+}
+</style>            
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head> 
+<body>
+<nav class="navbar navbar-inline"> 
+   <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Ricardo Valtierra LLC, 719-321-3204</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right" font-size: 100% !important;>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faq.html">FAQ</a></li> 
+      <li><a href="before.html">Before & After Pictures</a></li>
+    </ul>
+  </div>
+</nav>
